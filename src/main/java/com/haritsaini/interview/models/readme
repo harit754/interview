@@ -1,0 +1,36 @@
+
+
+User
+int id
+String name
+
+ConferanceRoom
+int id
+Floor floor
+Building building
+int capacity
+
+
+ConferenceRoomSlot
+int id
+ConferenceRoom conferenceRoom
+Date dateTime
+Status status
+
+
+Booking
+int id
+ConferenceRoomSlot conferenceRoomSlot
+User user
+
+
+
+Floor
+int id
+List<ConferanceRoom> rooms
+Building building
+
+
+Building
+int id
+String address
